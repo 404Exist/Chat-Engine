@@ -1,3 +1,8 @@
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,70 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-bar {
+  background: #369cfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo-tab {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logout-tab {
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 4px;
+  transition: background 0.5s ease-in-out,
+  color 0.5s ease-in-out;
+}
+.logout-tab:hover {
+  background: white;
+  color: #002ac3;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+}
+
+.login-card {
+  background: #336780;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.login-card h2 {
+  margin-bottom: 40px;
+  color: #efefef;
+  font-weight: bold;
+}
+
+.login-button {
+  padding: 20px;
+  margin: 20px;
+  color: #2f2f2f;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.google {
+  background: #f55a00e0;
+}
+
+.facebook {
+  background: #0095ff;
 }
